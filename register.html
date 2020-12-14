@@ -1,0 +1,47 @@
+
+<!DOCTYPE HTML>
+<html>  
+    <head>
+        <title>SignUp</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </head>
+<body>
+    <form method="post" class="form mt-5" onsubmit="return checkForm(this);" id="form" style="margin-top: 20px; vertical-align: middle;">
+        <div class="container">
+            <h1>SignUp</h1>
+            <div class="row  mt-4" >
+                <div class="col-md-3" align="right" style="margin-top:7px"><label for="txtUsername"><b>CustomerName : </b></label></div>
+                <div class="col-md-8"><input type="text" class="form-control" placeholder="Enter name" name="txtUsername" required > </div>
+            </div>
+            <div class="row  mt-4" >
+                <div class="col-md-3" align="right" style="margin-top:7px"><label for="txtForename"><b>Forename : </b></label></div>
+                <div class="col-md-8"><input type="text" class="form-control"  placeholder="Enter name" name="txtForename" ></div>
+            </div>
+            <div class="row  mt-4" >
+                <div class="col-md-3" align="right" style="margin-top:7px"><label for="txtSurname"><b>Surname : </b></label></div>
+                <div class="col-md-8"><input type="text" class="form-control"  placeholder="Enter name" name="txtSurname">   </div>
+            </div>
+            <div class="row  mt-4" >
+                <div class="col-md-3" align="right" style="margin-top:7px"><label for="txtEmail"><b>Email : </b></label></div>
+                <div class="col-md-8"><input type="email" class="form-control"  placeholder="Enter name" name="txtEmail" required></div>
+            </div> 
+            <div class="row  mt-4" >
+                <div class="col-md-3" align="right" style="margin-top:7px"><label for="Password"><b>Password : </b></label></div>
+                <div class="col-md-8"><input type="password" class="form-control"  placeholder="Enter Password" name="Password" required></div>
+                <!-- pattern="/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,50}$/g" 
+                    title="It should contain at least 1 uppercase letter and 1 lowercase letter, 1 special character and 1 number." -->
+            </div> 
+            <div class="row  mt-4" >
+                <div class="col-md-3" align="right" style="margin-top:7px"><label for="Password"><b>Confirm Password : </b></label></div>
+                <div class="col-md-8"><input type="password" class="form-control" placeholder="Enter Confirm Password" name="rePassword" required></div>
+            </div> 
+            <div class="col-md-10 mr-5 mt-3" align="right">
+                <button type="submit" class="btn btn-primary">SignUp</button>
+            </div>
+        </div>
+    </form>
+    <script src="validation.js"></script>
+</body>
+</html>
