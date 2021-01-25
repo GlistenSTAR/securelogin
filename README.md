@@ -1,6 +1,6 @@
 # Secure login
 
-This project made by Lionheart.
+This project made by Danil.
 
 I use two php secure function in login.
 
